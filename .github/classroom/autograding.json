@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Class Creation Test",
+      "setup": "",
+      "run": "./gradlew classcreation-classesandmethods-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Class Visibility Test",
+      "setup": "",
+      "run": "./gradlew classvisibility-practicingclasses-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Constructors Clock Test",
+      "setup": "",
+      "run": "./gradlew constructors-practicingconstructors-clock-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Constructors ToDoItem Test",
+      "setup": "",
+      "run": "./gradlew constructors-practicingconstructors-todoitem-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "constructors ToDoList Test",
+      "setup": "",
+      "run": "./gradlew constructors-practicingconstructors-todolist-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Constructors Wallet Test",
+      "setup": "",
+      "run": "./gradlew constructors-practicingconstructors-wallet-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
