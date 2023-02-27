@@ -5,7 +5,7 @@ public class Application {
     public static void transferBetween(Account source, Account recipient, double amount) {
         // This method should attempt to withdraw the amount from the source account,
         // and deposit it into the recipient account.
-        //
+
         // You must print a message exactly like:
         // "Payment completed. Transferred 1000.0 from ken258192 to joe786471"
         // For the given amount, source accountId, and recipient accountId
@@ -15,7 +15,15 @@ public class Application {
         // "Payment failed. Insufficient Funds."
         //
         // Your Code Here
-
+        if(source.makeWithdrawal(amount) == 0){
+            System.out.println("Payment failed. Insufficient Funds.");
+        }else{
+            recipient.makeDeposit(amount);
+            System.out.println("Payment completed. Transferred " +
+                    amount +
+                    " from " + source.getAccountId()
+                    + " to " + recipient.getAccountId());
+        }
     }
 
     public static void main(String[] args) {

@@ -3,14 +3,21 @@ package com.kenzie.classesandmethods;
 public class Application {
     public static int rollDice() {
         // Your Code Here
-
-        return 0;
+        Dice dice = new Dice();
+        dice.roll();
+        return dice.getTotal();
     }
 
     public static int[] roll1000Times() {
         int[] results = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         // Your Code Here
 
+        for(int i=0; i < 1000; i++){
+            Dice dice = new Dice();
+            dice.roll();
+            int total = dice.getTotal();
+            results[total]++;
+        }
         return results;
     }
 
@@ -19,9 +26,19 @@ public class Application {
         // Now, the dice 1000 times again.
         // But, re-roll both dice any time either die is a 1.
         // Your Code Here
-
+        for (int i = 0; i < 1000; i++) {
+            Dice dice = new Dice();
+            dice.roll();
+            int total = dice.getTotal();
+            while (dice.getDice1() == 1 || dice.getDice2() == 1) {
+                dice.roll(); // re-roll both dice if either is a 1
+                total = dice.getTotal();
+            }
+            results[total]++;
+        }
         return results;
     }
+
 
     public static void main(String[] args) {
         // You should not need to modify the code in this method.  Put your code in the two methods above.
